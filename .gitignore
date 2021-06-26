@@ -1,0 +1,10 @@
+**/__pycache__
+**/.vscode
+**/envs
+memberlist.txt
+geckodriver.log
+settings.txt
+driver/
+geckodriver.log
+daidalos-report.log
+
