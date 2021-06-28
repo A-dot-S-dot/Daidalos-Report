@@ -1,4 +1,4 @@
-#+TITLE: Daidalos Report for Sprecher:innen
+#+TITLE: Daidalos Report für Sprecher:innen
 
 Mit diesem kleinen Programm können Sprecher:innen der Studienstiftung
 über Neuaufgenommene informiert werden. Hierzu fragt dich der
@@ -34,7 +34,7 @@ einstellst. Dabei wird immer mal wieder zwischen Unix-Betriebssystemen
 
 * Download
 ** Windows
-[[https://github.com/A-dot-S-dot/Daidalos-Report/raw/master/daidalos_report_windows.zip][Hier]] kannst du einen kompriemierten Ordner mit dem Programm
+[[https://github.com/A-dot-S-dot/Daidalos-Report/raw/master/daidalos_report_windows.7z][Hier]] kannst du einen kompriemierten Ordner mit dem Programm
 herunterladen. Dieser muss nur noch entpackt werden. Das kann
 beispielsweise mit [[https://www.7-zip.org/][7zip]] erfolgen. Für den Download musst du wissen, ob
 dein Systemtyp =64-bit x64= oder =32-bit x86= ist. Falls du das nicht
@@ -58,11 +58,13 @@ pip3 install selenium
 pip3 install pyqt5
 #+end_src
 
-Nun lade [[file:daidalos_report.py][hier]] die Datei herunter. Das Programm kann nun mit dem
-folgenden Befehl gestartet werden.
+Nun öffne [[https://raw.githubusercontent.com/A-dot-S-dot/Daidalos-Report/master/daidalos_report.py][hier]] die Datei und speichere sie, indem du die Seite
+speicherst. Auf Firefox erfolgt dies durch die Tastenkombination
+=Ctrl-s=. Das Programm kann nun mit dem folgenden Befehl gestartet
+werden.
 
 #+begin_src shell
-python3 ~/path/to/daidalos-report.py
+python3 ~/path/to/daidalos_report.py
 #+end_src
 
 Dabei solltest du =/path/to/= durch den tatsächlichen Pfad ersetzen.
