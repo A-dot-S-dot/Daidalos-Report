@@ -2,7 +2,7 @@
 
 Mit diesem kleinen Programm können Sprecher:innen der Studienstiftung
 über Neuaufgenommene informiert werden. Hierzu fragt dich der
-=Daidalos Report= nach deinen Anmeldedaten und das Programm logt sich
+Daidalos Report nach deinen Anmeldedaten und das Programm logt sich
 für dich ein, navigiert zu deiner Hochschulgruppe und erstellt eine
 lokale Kopie von dieser. Diese gleicht das Programm dann ab mit der
 vorherigen Kopie und informiert dich dann über Veränderungen.
@@ -76,16 +76,16 @@ zertifizierter Autor bin. Es sei versichert, dass keine Malware
 durch dieses Programm geschleust wird.
 
 Nach dem *ersten* ausführen erscheint ein Dialog mit Einstellungen für
-=Daidalos Report=. Auf diese wird weiter unten eingegangen. Sind alle
+Daidalos Report. Auf diese wird weiter unten eingegangen. Sind alle
 Einstellungen vorgenommen worden und sind diese gespeichert, so kann
 mit =Report Starten= die Anwendung veranlasst werden eine erste
 Untersuchungsroutine durchzuführen. Beim nächsten aufrufen des
-=Daidalos Report= werden die vorgenommenen Einstellungen verwendet, um
+Daidalos Report werden die vorgenommenen Einstellungen verwendet, um
 vor dem Erscheinen der grafischen Oberfäche eine Untersuchungsroutine
 durchzuführen.
 
 * Einstellungen
-Nach dem ersten Aufruf von =Daidalos Report= wird ein Dialog Fenster
+Nach dem ersten Aufruf von Daidalos Report wird ein Dialog Fenster
 geöffnet, in dem du Einstellung vornehmen kannst. Im Folgenden werden
 diese erläutert.
 
@@ -98,12 +98,12 @@ deaktiviert werden, die dafür sorgt, dass vor jedem Start einer
 Untersuchungsroutine nach dem Passwort gefragt wird.
 
 ** Browser und Driver Pfad
-=Daidalos Report= unterstützt vier Browser. Nämlich [[https://www.mozilla.org/de/firefox/new/][Firefox]], [[https://www.google.com/intl/de/chrome/][Chrome]],
+Daidalos Report unterstützt vier Browser. Nämlich [[https://www.mozilla.org/de/firefox/new/][Firefox]], [[https://www.google.com/intl/de/chrome/][Chrome]],
 [[https://www.microsoft.com/en-us/edge][Edge]] und [[https://www.apple.com/de/safari/][Safari]]. Es empfiehlt sich Firefox oder Chrome zu nutzen, da
 es bei den anderen Browser anscheinend nicht möglich ist, diese im
 Hintergrund aufzurufen (siehe unten).
 
-Damit =Daidalos Report= mit den jeweiligen Browser interagieren kann
+Damit Daidalos Report mit den jeweiligen Browser interagieren kann
 benötigt es zusätzlich Driver. In der folgeden Tabelle sind die
 benötigten Driver für die jeweiligen Browser aufgelistet.
 
@@ -111,7 +111,7 @@ benötigten Driver für die jeweiligen Browser aufgelistet.
 |---------+--------------------|
 | Firefox | [[https://github.com/mozilla/geckodriver/releases][geckodriver]]        |
 | Chrome  | [[https://chromedriver.chromium.org/downloads][chromedriver]]       |
-| Edge    | [[https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/][microsoftWebDriver]] |
+| Edge    | [[https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/][msedgedriver]] |
 | Safari  | lokal vorhanden    |
 
 Den Safari Fall wird weiter untern behadelt. Bitte lade den passenden
@@ -124,11 +124,11 @@ Driver herunter und etpacke ihn. Anschließend kann über die Option
 ** Hintergrundausführung und Wartezeit
 Die Einstellung =Hintergrundausführung= lässt die Untersuchungsroutine
 im Hintergrunf ablaufen. Die =Wartezeit= gibt an, wie lange der
-=Daidalos Report= zwischen einzelnen Schritten warten soll. Es
+Daidalos Report zwischen einzelnen Schritten warten soll. Es
 empfiehlt sich diese hochzuschrauben, bei langen Ladezeiten.
 
 * Automatische Ausführung nach dem Hochfahren
-Eine einfache Möglichkeit =Daidalos Report= regelmäßig und automatisch
+Eine einfache Möglichkeit Daidalos Report regelmäßig und automatisch
 auszuführen ist nach dem Hochfahren. Im folgenden werden die
 Einstellungsschritte für die jeweiligen Betriebssysteme aufgelistet.
 
@@ -138,7 +138,7 @@ Einstellungsschritte für die jeweiligen Betriebssysteme aufgelistet.
 2. Drücke =<Windows>= und =R=, gebe "shell:startup" ein und drücke auf
    "OK".
 3. Verschiebe die zuvor erstellte Verknüfung in das erschienene
-   Fenster und =Daidalos Report= startet nach jedem hochfahren.
+   Fenster und Daidalos Report startet nach jedem hochfahren.
 
 ** Linux und macOS
 Hierfür kann ein =cronjob= eingerichtet werden. Hierzu kannst du im
