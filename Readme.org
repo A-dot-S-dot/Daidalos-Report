@@ -65,7 +65,7 @@ speicherst. Auf Firefox erfolgt dies durch die Tastenkombination
 werden.
 
 #+begin_src shell
-python3 ~/path/to/daidalos_report.py
+python ~/path/to/daidalos_report.py
 #+end_src
 
 Dabei solltest du =/path/to/= durch den tatsächlichen Pfad ersetzen.
@@ -171,16 +171,16 @@ Hier könnte eine [[https://help.ubuntu.com/stable/ubuntu-help/startup-applicati
 folgede Befehl hinzugefügt wird.
 
 #+begin_src shell
-python3 /path/to/daidalos_report.py
+python /path/to/daidalos_report.py
 #+end_src
 
 Dabei sollte =/path/to/= durch den tatsächlichen Pfad ersetzt werden.
 
 ** macOS
 Leider habe wir keine zufriedenstellende Lösung gefunden. Theoretisch
-müsste es ebenfalls einem =cronjob= gehen, wie oben gezeigt, dass hat
-aber bei unserem Test nicht funktioniert. Ich freue mich daher über
-Lösungsvorschläge.
+müsste es ebenfalls mit einem =cronjob= gehen, wie oben gezeigt, dass
+hat aber bei unserem Test nicht funktioniert. Ich freue mich daher
+über Lösungsvorschläge.
 
 Alternativ kann eine Abkürzung für das Terminal eingerichtet werden
 (siehe unten).
