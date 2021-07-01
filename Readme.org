@@ -18,17 +18,18 @@ einstellst. Dabei wird immer mal wieder zwischen Unix-Betriebssystemen
 :CONTENTS:
 - [[#download][Download]]
   - [[#windows][Windows]]
-  - [[#linux-und-macos][Linux und macOs]]
+  - [[#linux-und-macos][Linux und macOS]]
 - [[#die-erste-ausführung][Die erste Ausführung]]
 - [[#einstellungen][Einstellungen]]
   - [[#anmeldedaten][Anmeldedaten]]
   - [[#browser-und-driver-pfad][Browser und Driver Pfad]]
-    - [[#safari][Safari]]
   - [[#hintergrundausführung-und-wartezeit][Hintergrundausführung und Wartezeit]]
 - [[#automatische-ausführung-nach-dem-hochfahren][Automatische Ausführung nach dem Hochfahren]]
   - [[#windows][Windows]]
-  - [[#linux-und-macos][Linux und macOS]]
+  - [[#linux][Linux]]
   - [[#ubuntu][Ubuntu]]
+  - [[#macos][macOS]]
+- [[#abkürzung-für-das-terminal][Abkürzung für das Terminal]]
 - [[#fehler-und-anmerkungen][Fehler und Anmerkungen]]
 :END:
 
@@ -47,7 +48,7 @@ dann die gewünschten Entpackungsoptionen ausgewählt werden können.
 Anschließend startest du die Anwendung, indem du die Anwendung
 =daidalos-report.exe= im entpackten Ordner auswählst.
 
-** Linux und macOs
+** Linux und macOS
 Das Programm benötigt [[https://www.python.org/][Python]]. Stelle also sicher, dass dieses
 installiert ist. Außerdem verwendet das Programm das Paket [[https://www.selenium.dev/][Selenium]]
 und [[https://www.qt.io/][PyQt5]]. Du kannst diese installieren, indem du die folgenden Befehl
@@ -107,25 +108,27 @@ Damit Daidalos Report mit den jeweiligen Browser interagieren kann
 benötigt es zusätzlich Driver. In der folgeden Tabelle sind die
 benötigten Driver für die jeweiligen Browser aufgelistet.
 
-| Browser | Driver             |
-|---------+--------------------|
-| Firefox | [[https://github.com/mozilla/geckodriver/releases][geckodriver]]        |
-| Chrome  | [[https://chromedriver.chromium.org/downloads][chromedriver]]       |
-| Edge    | [[https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/][msedgedriver]] |
-| Safari  | lokal vorhanden    |
+| Browser | Driver          |
+|---------+-----------------|
+| Firefox | [[https://github.com/mozilla/geckodriver/releases][geckodriver]]     |
+| Chrome  | [[https://chromedriver.chromium.org/downloads][chromedriver]]    |
+| Edge    | [[https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/][msedgedriver]]    |
+| Safari  | lokal vorhanden |
 
-Den Safari Fall wird weiter untern behadelt. Bitte lade den passenden
-Driver herunter und etpacke ihn. Anschließend kann über die Option
-=Driver Path= angegeben werden, wo sich dieser befindet.
+Für *Firefox, Chrome und Edge* lade den passenden Driver herunter und
+entpacke ihn. Anschließend kann über die Option =Driver Path=
+angegeben werden, wo sich dieser befindet.
 
-*** Safari
-/in progress/
+Für *Safari* folge den Anweisungen unter dem folgeden [[https://support.accelq.com/hc/en-us/articles/360028346351-Setting-up-Safari-browser-for-automation][Link]].
 
 ** Hintergrundausführung und Wartezeit
 Die Einstellung =Hintergrundausführung= lässt die Untersuchungsroutine
-im Hintergrunf ablaufen. Die =Wartezeit= gibt an, wie lange der
-Daidalos Report zwischen einzelnen Schritten warten soll. Es
-empfiehlt sich diese hochzuschrauben, bei langen Ladezeiten.
+im Hintergrunf ablaufen. Wie zuvor erwähnt ist diese Funktion nicht
+für Edge und Safari verfügbar.
+
+Die =Wartezeit= gibt an, wie lange der Daidalos Report zwischen
+einzelnen Schritten warten soll. Es empfiehlt sich diese
+hochzuschrauben, bei langen Ladezeiten.
 
 * Automatische Ausführung nach dem Hochfahren
 Eine einfache Möglichkeit Daidalos Report regelmäßig und automatisch
@@ -140,7 +143,7 @@ Einstellungsschritte für die jeweiligen Betriebssysteme aufgelistet.
 3. Verschiebe die zuvor erstellte Verknüfung in das erschienene
    Fenster und Daidalos Report startet nach jedem hochfahren.
 
-** Linux und macOS
+** Linux
 Hierfür kann ein =cronjob= eingerichtet werden. Hierzu kannst du im
 Terminal folgendes eingeben.
 
@@ -156,8 +159,7 @@ Ende hinzufügen kannst.
 #+end_src
 
 Hierbei sollte =/path/to= durch den tatsächlichen Pfad ersetzt werden.
-Dabei sollte statt =~/= die ausgeschriebene Form =/home/username/=
-verwendet werden.
+Verwende statt =~/= die ausgeschriebene Form =/home/username/=.
 
 *Anmerkung:* Dieser Cronjob ist so eingerichtet, dass er 60 Sekunden
  nach dem Start wartet, damit das System vollständig geladen ist.
@@ -173,6 +175,32 @@ python3 /path/to/daidalos_report.py
 #+end_src
 
 Dabei sollte =/path/to/= durch den tatsächlichen Pfad ersetzt werden.
+
+** macOS
+Leider habe wir keine zufriedenstellende Lösung gefunden. Theoretisch
+müsste es ebenfalls einem =cronjob= gehen, wie oben gezeigt, dass hat
+aber bei unserem Test nicht funktioniert. Ich freue mich daher über
+Lösungsvorschläge.
+
+Alternativ kann eine Abkürzung für das Terminal eingerichtet werden
+(siehe unten).
+
+* Abkürzung für das Terminal
+Diese Lösung ist für Linux und macOS Nutzer gedacht. Wenn du möchtest
+kannst du eine Abkürzung (bspw. =dr=) für das Terminal einrichten,
+damit du =Daidalos-Report= nach Eingabe ebendieser in das Terminal
+ausführen kannst.
+
+Füge in deine =.bashrc= Datei (oder =.bash_profile=, =.zshrc=), die
+sich in deinem =home= Verzeichnis befindet, folgende Zeile am Ende
+hinzu.
+
+#+begin_src shell
+alias dr="python /path/to/daidalos_report.py"
+#+end_src
+
+Denke daran, dass du =/path/to/= durch den tatsächlichen Pfad ersetzen
+solltest.
 
 * Fehler und Anmerkungen
 Ich freue mich sehr über Verbesserungsvorschläge oder über Fehler.
