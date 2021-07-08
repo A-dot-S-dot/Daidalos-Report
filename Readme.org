@@ -7,7 +7,7 @@ für dich ein, navigiert zu deiner Hochschulgruppe und erstellt eine
 lokale Kopie von dieser. Diese gleicht das Programm dann ab mit der
 vorherigen Kopie und informiert dich dann über Veränderungen.
 
-Im folgenden wird erklärt, wie du dieses Programm installierst und
+Im Folgenden wird erklärt, wie du dieses Programm installierst und
 einstellst. Dabei wird immer mal wieder zwischen Unix-Betriebssystemen
 (macOS, Linux) und Windows unterschieden.
 
@@ -35,13 +35,13 @@ einstellst. Dabei wird immer mal wieder zwischen Unix-Betriebssystemen
 
 * Download
 ** Windows
-[[https://github.com/A-dot-S-dot/Daidalos-Report/raw/master/daidalos_report_windows.7z][Hier]] kannst du einen kompriemierten Ordner mit dem Programm
+[[https://github.com/A-dot-S-dot/Daidalos-Report/raw/master/daidalos_report_windows.7z][Hier]] kannst du einen komprimierten Ordner mit dem Programm
 herunterladen. Dieser muss nur noch entpackt werden. Das kann
 beispielsweise mit [[https://www.7-zip.org/][7zip]] erfolgen. Für den Download musst du wissen, ob
 dein Systemtyp =64-bit x64= oder =32-bit x86= ist. Falls du das nicht
 weißt, wird [[https://support.microsoft.com/de-de/windows/32-bit-und-64-bit-windows-h%C3%A4ufig-gestellte-fragen-c6ca9541-8dce-4d48-0415-94a3faa2e13d][hier]] erklärt, wie du das herausfinden kannst.
 
-Ist =7zip= heruntergerladen und installiert, erscheint mit einem
+Ist =7zip= heruntergeladen und installiert, erscheint mit einem
 Rechtsklick auf =daidalos_report_windows.zip= den Reiter =7zip= mit dem
 dann die gewünschten Entpackungsoptionen ausgewählt werden können.
 
@@ -51,7 +51,7 @@ Anschließend startest du die Anwendung, indem du die Anwendung
 ** Linux und macOS
 Das Programm benötigt [[https://www.python.org/][Python]]. Stelle also sicher, dass dieses
 installiert ist. Außerdem verwendet das Programm das Paket [[https://www.selenium.dev/][Selenium]]
-und [[https://www.qt.io/][PyQt5]]. Du kannst diese installieren, indem du die folgenden Befehl
+und [[https://www.qt.io/][PyQt5]]. Du kannst diese installieren, indem du die folgenden Befehle
 ins Terminal eingibst.
 
 #+begin_src shell
@@ -71,7 +71,7 @@ python ~/path/to/daidalos_report.py
 Dabei solltest du =/path/to/= durch den tatsächlichen Pfad ersetzen.
 
 * Die erste Ausführung
-Vermutlich wird nach dem ersten ausführen der Anwendung eine
+Vermutlich wird nach dem ersten Ausführen der Anwendung eine
 Sicherheitswarnung erscheinen. Das liegt daran, dass ich kein
 zertifizierter Autor bin. Es sei versichert, dass keine Malware
 durch dieses Programm geschleust wird.
@@ -80,9 +80,9 @@ Nach dem *ersten* ausführen erscheint ein Dialog mit Einstellungen für
 Daidalos Report. Auf diese wird weiter unten eingegangen. Sind alle
 Einstellungen vorgenommen worden und sind diese gespeichert, so kann
 mit =Report Starten= die Anwendung veranlasst werden eine erste
-Untersuchungsroutine durchzuführen. Beim nächsten aufrufen des
+Untersuchungsroutine durchzuführen. Beim nächsten Aufrufen des
 Daidalos Report werden die vorgenommenen Einstellungen verwendet, um
-vor dem Erscheinen der grafischen Oberfäche eine Untersuchungsroutine
+vor dem Erscheinen der grafischen Oberfläche eine Untersuchungsroutine
 durchzuführen.
 
 * Einstellungen
@@ -104,8 +104,8 @@ Daidalos Report unterstützt vier Browser. Nämlich [[https://www.mozilla.org/de
 es bei den anderen Browser anscheinend nicht möglich ist, diese im
 Hintergrund aufzurufen (siehe unten).
 
-Damit Daidalos Report mit den jeweiligen Browser interagieren kann
-benötigt es zusätzlich Driver. In der folgeden Tabelle sind die
+Damit Daidalos Report mit den jeweiligen Browsern interagieren kann
+benötigt es zusätzlich Driver. In der folgenden Tabelle sind die
 benötigten Driver für die jeweiligen Browser aufgelistet.
 
 | Browser | Driver          |
@@ -119,11 +119,11 @@ Für *Firefox, Chrome und Edge* lade den passenden Driver herunter und
 entpacke ihn. Anschließend kann über die Option =Driver Path=
 angegeben werden, wo sich dieser befindet.
 
-Für *Safari* folge den Anweisungen unter dem folgeden [[https://support.accelq.com/hc/en-us/articles/360028346351-Setting-up-Safari-browser-for-automation][Link]].
+Für *Safari* folge den Anweisungen unter dem folgenden [[https://support.accelq.com/hc/en-us/articles/360028346351-Setting-up-Safari-browser-for-automation][Link]].
 
 ** Hintergrundausführung und Wartezeit
 Die Einstellung =Hintergrundausführung= lässt die Untersuchungsroutine
-im Hintergrunf ablaufen. Wie zuvor erwähnt ist diese Funktion nicht
+im Hintergrund ablaufen. Wie zuvor erwähnt ist diese Funktion nicht
 für Edge und Safari verfügbar.
 
 Die =Wartezeit= gibt an, wie lange der Daidalos Report zwischen
@@ -132,7 +132,7 @@ hochzuschrauben, bei langen Ladezeiten.
 
 * Automatische Ausführung nach dem Hochfahren
 Eine einfache Möglichkeit Daidalos Report regelmäßig und automatisch
-auszuführen ist nach dem Hochfahren. Im folgenden werden die
+auszuführen ist nach dem Hochfahren. Im Folgenden werden die
 Einstellungsschritte für die jeweiligen Betriebssysteme aufgelistet.
 
 ** Windows
@@ -140,7 +140,7 @@ Einstellungsschritte für die jeweiligen Betriebssysteme aufgelistet.
    Verknüpfung von ebendieser.
 2. Drücke =<Windows>= und =R=, gebe "shell:startup" ein und drücke auf
    "OK".
-3. Verschiebe die zuvor erstellte Verknüfung in das erschienene
+3. Verschiebe die zuvor erstellte Verknüpfung in das erschienene
    Fenster und Daidalos Report startet nach jedem hochfahren.
 
 ** Linux
@@ -151,7 +151,7 @@ Terminal folgendes eingeben.
 crontab -e
 #+end_src
 
-Anschließend wird ein Dokument geöffnet, in dem du folgeden Zeile am
+Anschließend wird ein Dokument geöffnet, in dem du folgenden Zeile am
 Ende hinzufügen kannst.
 
 #+begin_src shell
@@ -168,7 +168,7 @@ Verwende statt =~/= die ausgeschriebene Form =/home/username/=.
 
 ** Ubuntu
 Hier könnte eine [[https://help.ubuntu.com/stable/ubuntu-help/startup-applications.html.en][Startup Application]] eingerichtet werden, indem der
-folgede Befehl hinzugefügt wird.
+folgende Befehl hinzugefügt wird.
 
 #+begin_src shell
 python /path/to/daidalos_report.py
@@ -177,8 +177,8 @@ python /path/to/daidalos_report.py
 Dabei sollte =/path/to/= durch den tatsächlichen Pfad ersetzt werden.
 
 ** macOS
-Leider habe wir keine zufriedenstellende Lösung gefunden. Theoretisch
-müsste es ebenfalls mit einem =cronjob= gehen, wie oben gezeigt, dass
+Leider haben wir keine zufriedenstellende Lösung gefunden. Theoretisch
+müsste es ebenfalls mit einem =cronjob= gehen, wie oben gezeigt, das
 hat aber bei unserem Test nicht funktioniert. Ich freue mich daher
 über Lösungsvorschläge.
 
@@ -186,7 +186,7 @@ Alternativ kann eine Abkürzung für das Terminal eingerichtet werden
 (siehe unten).
 
 * Abkürzung für das Terminal
-Diese Lösung ist für Linux und macOS Nutzer gedacht. Wenn du möchtest
+Diese Lösung ist für Linux und macOS Nutzer gedacht. Wenn du möchtest,
 kannst du eine Abkürzung (bspw. =dr=) für das Terminal einrichten,
 damit du =Daidalos-Report= nach Eingabe ebendieser in das Terminal
 ausführen kannst.
@@ -204,5 +204,5 @@ solltest.
 
 * Fehler und Anmerkungen
 Ich freue mich sehr über Verbesserungsvorschläge oder über Fehler.
-Bitte verwende hierfür den =Issues= Berreich auf Github. Alternativ
+Bitte verwende hierfür den =Issues= Bereich auf Github. Alternativ
 schreibe mir gerne eine Mail an [[mailto:alexey.schwarzmann@posteo.de][alexey.schwarzmann@posteo.de]].
