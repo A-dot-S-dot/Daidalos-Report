@@ -205,4 +205,4 @@ solltest.
 * Fehler und Anmerkungen
 Ich freue mich sehr über Verbesserungsvorschläge oder über Fehler.
 Bitte verwende hierfür den =Issues= Bereich auf Github. Alternativ
-schreibe mir gerne eine Mail an [[mailto:alexey.schwarzmann@posteo.de][alexey.schwarzmann@posteo.de]].
+schreibe mir gerne eine Mail an [[mailto:alexey.schwarzmann@tu-dortmund.de][alexey.schwarzmann@tu-dortmund.de]].
